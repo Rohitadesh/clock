@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-body{
+    height: 60%;
+    width: 60%;
+    background-image: url('./sdgh.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+.seconds{
+    height: 24%;
+    width: 0%;
+    border:1px solid  rgb(2, 1, 15);
+    position:absolute;
+    left: 33.5%;
+    transform-origin: bottom;
+    top: 24%;
+
+}
+
+.minutes{
+    height: 40%;
+    width: 0.2%;
+    border: 1px solid rgb(2, 1, 15);
+    background-color: black;
+    position:relative;
+    left: 22%;
+    bottom: 19%;
+    transform-origin: bottom;
+}
+
+
+
+.hour{
+    height: 22%;
+    width: 0.5%;
+    /* border: 1px solid rgb(54, 117, 126); */
+    background-color: black;
+    position:relative;
+    left: 22.5%;
+    bottom: -24% ;
+    transform-origin: bottom;
+}

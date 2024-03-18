@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="clock-body">
+            <div class="rounded">
+                
+            </div>
+            <div class="seconds" id="second"></div>
+            <div class="hour" id="hours"></div>
+            <div class="minutes" id="minute"></div>
+        </div>
+        
+    </div>
+    <script>
+        const seconds=document.querySelector('.seconds')
+        const minute = document.querySelector('.minutes')
+        const hour =document.querySelector('.hour')
+        setInterval(()=>{
+            let date = new Date()
+            let  generateSecond = date.getSeconds()*6
+            let  generateMinute = date.getMinutes()*6
+            let  generateHour = date.getHours()* 30  + Math.round(generateMinute/12)
+        seconds.style.transform =  `rotate(${generateSecond}deg)`
+        minute.style.transform=    `rotate(${generateMinute}deg)`
+        hour.style.transform=    `rotate(${generateHour}deg)`
+        // console.log(generateMinute*6/2,"generated second")
+    },1000)
+    </script>
+</body>
+</html>
