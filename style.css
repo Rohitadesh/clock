@@ -17,7 +17,7 @@
     width: 60%;
     background-image: url('./sdgh.jpg');
     background-repeat: no-repeat;
-    
+    /* border: 1px solid red; */
 }
 
 .seconds{
@@ -27,7 +27,7 @@
     position:absolute;
     left: 33.5%;
     transform-origin: bottom;
-    top: 24%;
+    top: 23%;
 
 }
 
@@ -37,12 +37,21 @@
     border: 1px solid rgb(2, 1, 15);
     background-color: black;
     position:relative;
-    left: 22%;
-    bottom: 19%;
+    left: 23%;
+    bottom: 20%;
     transform-origin: bottom;
 }
 
+.rounded{
+    height: 20px;
+    width: 25px;
+    border-radius: 20px 20px;
 
+    position:relative;
+    left: 22%;
+    bottom: -44%;
+    background-color: black;
+}
 
 .hour{
     height: 22%;
@@ -50,7 +59,7 @@
     /* border: 1px solid rgb(54, 117, 126); */
     background-color: black;
     position:relative;
-    left: 22.5%;
-    bottom: -24% ;
+    left: 22%;
+    bottom: -21% ;
     transform-origin: bottom;
 }
